@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title>TempleConnect</title>
+  <link rel="stylesheet" href="./asset/styles.css">
+</head>
+
+
+<body>
+  <header class="text-gray-600 body-font" id="header">
+    <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 " href="index.html">
+        <img src="asset\logo.png" height="100px" width="100px">
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html" ">Places</a>
+        <a class=" mr-5 hover:text-gray-900" href="aboutUs.html" ">About</a>
+        <a class=" mr-5 hover:text-gray-900" href="contactUs.html" ">Contact</a>
+        <a class=" mr-5 hover:text-gray-900" href="viewTicket.html" id="ticketsbtn" ">See My Booking</a>
+      </nav>
+      <a class=" inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded
+          text-base mt-4 md:mt-0" id="login-btn" href="login.html">Login
+
+        </a>
+        <button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+          id="logout-btn" onclick="logout()">Logout
+        </button>
+    </div>
+  </header>
+  <div class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="bg-white p-10 rounded-lg shadow-md">
+      <div class="flex justify-between mb-10">
+        <h1 class="text-2xl font-bold">Login</h1>
+        <!-- <a href="#" class="text-blue-500">Sign up</a> -->
+      </div>
+      <div>
+        <div class="mb-4">
+          <label for="username" class="block text-gray-700 font-bold mb-2">Username</label>
+          <input type="username" name="username" id="username" class="bg-gray-200 py-2 px-3 rounded-lg w-full">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-bold mb-2">Password</label>
+          <input type="password" name="password" id="password" class="bg-gray-200 py-2 px-3 rounded-lg w-full">
+        </div>
+        <div class="mb-6">
+          <button onclick="login()" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">Login</button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white p-10 rounded-lg shadow-md ml-10">
+      <div class="flex justify-between mb-10">
+        <h1 class="text-2xl font-bold">Sign up</h1>
+        <!-- <a href="#" class="text-blue-500">Login</a> -->
+      </div>
+      <div>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+          <input type="text" name="name" id="name" class="bg-gray-200 py-2 px-3 rounded-lg w-full">
+        </div>
+        <div class="mb-4">
+          <label for="number" class="block text-gray-700 font-bold mb-2"> Phone Number</label>
+          <input type="number" name="number" id="number" class="bg-gray-200 py-2 px-3 rounded-lg w-full">
+        </div>
+        <div class="mb-4">
+          <label for="username1" class="block text-gray-700 font-bold mb-2">Username</label>
+          <input type="text" name="username1" id="username1" class="bg-gray-200 py-2 px-3 rounded-lg w-full">
+        </div>
+        <div class="mb-4">
+          <label for="password1" class="block text-gray-700 font-bold mb-2">Password</label>
+          <input type="password" name="password1" id="password1" class="bg-gray-200 py-2 px-3 rounded-lg w-full">
+        </div>
+        <div class="mb-6">
+          <button onclick="signup()" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">Sign
+            up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
